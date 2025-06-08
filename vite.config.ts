@@ -10,18 +10,22 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-    dts({ tsconfigPath: './tsconfig.app.json', include: ['./src'], rollupTypes: true }),
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      include: ['./lib'],
+      rollupTypes: true,
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': fileURLToPath(new URL('./lib', import.meta.url)),
     },
   },
   build: {
     outDir: 'dist',
     lib: {
-      entry: './src/index.ts',
-      formats: ['es'],
+      entry: './lib/index.ts',
+      formats: ['es', 'cjs'],
       fileName: 'index',
     },
     rollupOptions: {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ElTableColumn } from 'element-plus';
-import DataTable from '../src/DataTable.vue';
+import DataTable from '@/DataTable.vue';
 </script>
 
 <template>
