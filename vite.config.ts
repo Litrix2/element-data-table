@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import dts from 'vite-plugin-dts';
-
+import elementPlus from 'unplugin-element-plus/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -15,6 +15,7 @@ export default defineConfig({
       include: ['./lib'],
       rollupTypes: true,
     }),
+    elementPlus({}),
   ],
   resolve: {
     alias: {

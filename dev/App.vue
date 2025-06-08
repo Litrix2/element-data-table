@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ElTableColumn } from 'element-plus';
-import DataTable from '@/DataTable.vue';
+import { DataTable } from '@';
+import { ElTable } from 'element-plus';
 </script>
 
 <template>
-  <DataTable :rows="[]">
-    <ElTableColumn prop="a" label="test"></ElTableColumn>
+  <ElTable></ElTable>
+  <DataTable :rows="[{ a: 1 }]" custom-cols="a">
+    <template #a="a">{{ a }}</template>
   </DataTable>
 </template>
