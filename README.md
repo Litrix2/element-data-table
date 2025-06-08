@@ -1,2 +1,3 @@
 # element-data-table
-el-table with type safety
+
+el-table with type safety.
