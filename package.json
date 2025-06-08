@@ -1,6 +1,6 @@
 {
   "name": "@litrix/element-data-table",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "type": "module",
   "files": [
@@ -11,7 +11,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./style": "./dist/index.css"
   },
   "scripts": {
     "dev": "vite",

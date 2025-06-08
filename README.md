@@ -10,3 +10,7 @@ npm i @litrix/element-data-table
 
 > [!WARNING]
 > 请手动引入index.css，但目前相关样式可能与用户引入的element-plus样式重复。
+
+```bash
+import '@litrix/element-data-table/style'
+```
